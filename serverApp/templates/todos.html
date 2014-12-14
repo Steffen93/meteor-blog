@@ -1,0 +1,41 @@
+<head>
+	<title>Todo List</title>
+</head>
+
+<body>
+	<header>
+		<h1>Andre Sander</h1>
+		<h2>This is my website</h2>
+		
+		<div class="login">
+			{{> loginButtons}}
+		</div>
+	</header>
+
+
+	{{> taskList}}
+	{{> newTask}}
+</body>
+
+<template name="taskList">
+	<div class="tasks">
+		{{#each tasks}}
+			{{> task}}
+		{{/each}}
+	</div>
+</template>
+
+<template name="task">
+	<div class="task">
+		<b>{{text}}</b> ({{upvotes}}/{{downvotes}})
+		<input type="button" class="upvote" value="Upvote">
+		<input type="button" class="downvote" value="Downvote">
+	</div>
+</template>
+
+<template name="newTask">
+	<form class="newTaskForm">
+		<input type="text" value="" class="title" placeholder="Enter a title...">
+		<input type="submit" class="createNewTask" value="Create new task">
+	</form>
+</template>

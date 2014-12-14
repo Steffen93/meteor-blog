@@ -1,0 +1,30 @@
+<template name="editForm">
+	<div class="container top">
+		<form class="editForm well">
+
+			<div class="form-group">
+				<label>Title</label>
+				<input type="text" class="form-control title" placeholder="Title goes here...">
+			</div>
+
+			<div class="form-group">
+				<label>Tags</label>
+				<input type="text" class="form-control tags" placeholder="Tags go here...">
+			</div>
+
+			<div class="form-group">
+				<label>Markdown</label>
+				<textarea class="form-control markdown" rows="5" placeholder="Markdown goes here..."></textarea>
+			</div>
+
+			<label>Result</label>
+			<div class="form-group well compiled">
+				{{#markdown}}{{{markdown_data}}}{{/markdown}}
+			</div>
+
+			<button class="btn btn-success submit">Create</button>
+			<button class="btn btn-danger">Remove</button>
+			<button class="btn btn-warning">Edit</button>
+		</form>
+	</div>
+</template>

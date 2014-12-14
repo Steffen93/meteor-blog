@@ -1,0 +1,97 @@
+.compiled {
+	background-color: #fff;
+	min-height: 100px;
+	max-height: 250px;
+	overflow-y: auto;
+}
+
+body>header {
+	text-align: center;
+}
+
+body>header>img {
+	margin-top: 100px;
+	max-width: 120px;
+	max-height: 120px;
+}
+
+body>header>h1 {
+	color: #000;
+	margin: 20px 0px 0px 0px;
+	font-weight: 300;
+	font-size: 24px;
+}
+
+body>header>h2 {
+	color: #666;
+	font-size: 12px;
+	margin: 0px 0px 20px 0px;
+	font-weight: 300;
+}
+
+body>header>p {
+	font-size: 12px;
+	font-weight: 300;
+	margin-bottom: 50px;
+}
+
+.post {
+	max-width: 500px;
+	text-align: left;
+	margin: 0 auto;
+}
+
+.post header {
+	margin-top: 50px;
+}
+
+.post header .title {
+	font-size: 24px;
+	color: #333;
+}
+
+.post header .date {
+	color: #666;
+	font-size: 12px;
+	margin: 0px 0px 10px 0px;
+	font-weight: 300;
+	word-break: break-word;
+}
+
+.post footer {
+	margin-bottom: 50px;
+	color: #bbb;
+	font-weight: 300;
+	font-size: 12px;
+}
+
+.post footer .glyphicon {
+	font-size: 10px;
+	margin-right: 5px;
+}
+
+.post .heart.new:hover {
+	color: #e20004;
+}
+
+.post hr {
+	margin: 10px 0px;
+}
+
+.headersmall {
+	line-height: 55px;
+	background-color: #f5f5f5;
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+	border-bottom: 1px solid #cacaca;
+	padding: 0px 15px;
+	text-align: center;
+	font-weight: 400;
+}
+
+.headersmall a {
+	color: #262626;
+}
+
+.container.top {
+	margin-top: 30px;
+}

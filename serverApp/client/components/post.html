@@ -1,0 +1,29 @@
+<template name="post">
+	<div class="post">
+		<header>
+			<a href="/post/{{_id}}">
+				<span class="title">{{title}}</span>
+			</a>
+
+			<span class="date">{{formatDate createdAt}}</span>
+		</header>
+
+		<main>
+			{{#markdown}}{{{data}}}{{/markdown}}
+		</main>
+
+		<footer>
+			<span class="text-left">
+				<span class="glyphicon glyphicon-tags"></span>
+				{{formatTags tags}}
+			</span>
+
+			<span class="text-right">
+				<span class="likes">{{likes}}x</span>
+				<span class="glyphicon glyphicon-heart heart new"></span>
+			</span>
+		</footer>
+		
+		<hr>
+	</div>
+</template>

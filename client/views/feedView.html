@@ -1,0 +1,11 @@
+<template name="feedView">
+	{{> header}}
+
+	<div class="container center">
+		{{#each this}}
+			{{> post}}
+		{{/each}}
+	</div>
+
+	{{> footer}}
+</template>

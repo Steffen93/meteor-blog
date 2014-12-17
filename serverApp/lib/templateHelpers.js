@@ -1,9 +1,12 @@
 if (Meteor.isClient) {
 	Template.registerHelper('formatDate', function(date) {
-		var d = new Date(date),
-			formated = 'on ' + d.getDate() + '.' + (d.getMonth() + 1) + '.' + d.getFullYear() + ', ' + d.getHours() + ':' + d.getMinutes();
+		var days = (date.getDate() < 10 ? '0' : '') + date.getDate(),
+			months = (date.getMonth() + 1 < 10 ? '0' : '') + date.getMonth(),
+			years = (date.getFullYear() < 10 ? '0' : '') + date.getFullYear(),
+			hours = (date.getHours() < 10 ? '0' : '') + date.getHours(),
+			minutes = (date.getMinutes() < 10 ? '0' : '') + date.getMinutes();
 
-		return formated;
+		return 'on ' + days + '.' + months + '.' + years + ', ' + hours + ':' + minutes;
 	});
 
 	Template.registerHelper('formatObject', function(object) {

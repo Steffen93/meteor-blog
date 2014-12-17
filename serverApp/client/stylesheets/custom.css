@@ -1,29 +1,26 @@
-.compiled {
-	background-color: #fff;
-	min-height: 100px;
-	max-height: 250px;
-	overflow-y: auto;
-}
+/* HEADER */
 
 body>header {
 	text-align: center;
+	padding: 100px 0px 0px 0px;
+	background: url("/img/banner.jpg");
+	background-size: cover;
 }
 
 body>header>img {
-	margin-top: 100px;
 	max-width: 120px;
 	max-height: 120px;
 }
 
 body>header>h1 {
-	color: #000;
+	color: #fff; /* #000 */
 	margin: 20px 0px 0px 0px;
 	font-weight: 300;
 	font-size: 24px;
 }
 
 body>header>h2 {
-	color: #666;
+	color: #eaeaea; /* #666 */
 	font-size: 12px;
 	margin: 0px 0px 20px 0px;
 	font-weight: 300;
@@ -32,14 +29,47 @@ body>header>h2 {
 body>header>p {
 	font-size: 12px;
 	font-weight: 300;
-	margin-bottom: 50px;
+	color: #eaeaea;  /* #nothing */
 }
 
-.post {
+body>header>p>a {
+	color: #eaeaea;  /* #nothing */
+}
+body>header>p>a:hover {
+	color: #eaeaea;  /* #nothing */
+}
+
+header.small {
+	line-height: 55px;
+	background-color: #f5f5f5;
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+	border-bottom: 1px solid #cacaca;
+	text-align: center;
+	font-weight: 400;
+	padding: 0px;
+}
+
+header.small p {
+	margin: 0px;
+	color: #262626;
+} 
+
+header.small a {
+	color: #262626;
+}
+
+body>header.small>p>a:hover {
+	color: #262626;
+}
+
+.container.center {
 	max-width: 500px;
-	text-align: left;
 	margin: 0 auto;
 }
+
+/* POST */
+
+.post {}
 
 .post header {
 	margin-top: 50px;
@@ -65,9 +95,12 @@ body>header>p {
 	font-size: 12px;
 }
 
+.post img {
+	max-width: 100%;
+}
+
 .post footer .glyphicon {
 	font-size: 10px;
-	margin-right: 5px;
 }
 
 .post .heart.new:hover {
@@ -78,20 +111,23 @@ body>header>p {
 	margin: 10px 0px;
 }
 
-.headersmall {
-	line-height: 55px;
-	background-color: #f5f5f5;
-	box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
-	border-bottom: 1px solid #cacaca;
-	padding: 0px 15px;
-	text-align: center;
-	font-weight: 400;
-}
-
-.headersmall a {
-	color: #262626;
-}
-
 .container.top {
 	margin-top: 30px;
+}
+
+.compiled {
+	background-color: #fff;
+	min-height: 100px;
+	max-height: 250px;
+	overflow-y: auto;
+}
+
+/* FOOTER */
+body>footer {
+	max-width: 500px;
+	text-align: center;
+	margin: 0 auto;
+	color: #666;
+	font-size: 12px;
+	font-weight: 300;
 }

@@ -1,11 +1,11 @@
 <template name="feedView">
 	{{> header}}
 
-	<div class="container">
+	<div class="container center">
 		{{#each this}}
 			{{> post}}
 		{{/each}}
 	</div>
 
-	<a href="/edit/new">Create new Post</a>
+	{{> footer}}
 </template>

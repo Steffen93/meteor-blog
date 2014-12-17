@@ -13,15 +13,27 @@
 		</main>
 
 		<footer>
-			<span class="text-left">
-				<span class="glyphicon glyphicon-tags"></span>
-				{{formatTags tags}}
-			</span>
+			<!-- likes -->
+			<span class="glyphicon glyphicon-heart heart new"></span>
+			<span class="likes">x{{likes}}</span>
+			・
 
-			<span class="text-right">
-				<span class="likes">{{likes}}x</span>
-				<span class="glyphicon glyphicon-heart heart new"></span>
-			</span>
+			<!-- tags -->
+			{{#if tags}}
+			<span class="glyphicon glyphicon-tags"></span>
+			{{formatTags tags}}
+			・
+			{{/if}}
+
+			<!-- last modified -->
+			{{#if lastModifiedAt}}
+			<span class="glyphicon glyphicon-calendar"></span>
+			Last updated {{formatDate lastModifiedAt}}
+			・
+			{{/if}}
+
+			<!-- edit -->
+			<a href="/edit/{{_id}}">Edit</a>
 		</footer>
 		
 		<hr>
